@@ -6,3 +6,5 @@ menuOpenButton.addEventListener("click", ()=> {
 });
 //fechar menu quando o bottao do fechar é clicavel
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+

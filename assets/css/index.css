@@ -6,11 +6,13 @@
 }
 
 :root {
-    --primary-color: #4db6ac;
-    --secondary-color: #ce93d8;
-    --background-color: #64b5f6;
-    --dark-color: #252525
-        /* font size*/
+    --primary-color: #00796b; /* Teal darkened for better contrast */
+    --secondary-color: #ab47bc; /* Purple with a richer tone */
+    --background-color: #42a5f5; /* Slightly darker blue for better readability */
+    --tertiary-color: #512da8; /* Deep purple for additional accents */
+    --neutral-color: #ccc; /* Light gray for neutral elements */
+    --dark-color: #1c1c1c; /* Darker shade for improved contrast */
+    /* font size */
         --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;

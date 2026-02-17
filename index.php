@@ -38,7 +38,7 @@
             <button id="menu-open-button" class="fas fa-bars"></button>
 
         </nav>
-y    </header>
+    </header>
 
     <main>
         <section class="hero-section">
@@ -58,9 +58,9 @@ y    </header>
                 </div>
             </div>
         </section>
-        
+
     </main>
-    <script src="./assets/js/script.js"></script> 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
