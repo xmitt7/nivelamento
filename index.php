@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!--link para icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
@@ -16,6 +18,7 @@
                 <h2 class="logo-text">Saúde Mental e Bem-Estar</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -32,9 +35,11 @@
                     <a href="view/login.php" class="nav-link">login</a>
                 </li>
             </ul>
-        </nav>
+            <button id="menu-open-button" class="fas fa-bars"></button>
 
-    </header>
+        </nav>
+y    </header>
+
     <main>
         <section class="hero-section">
             <div class="section-content">
@@ -42,6 +47,7 @@
                     <h2 class="title">Bem-vindo ao nosso site de Saúde Mental e Bem-Estar!</h2>
                     <h3 class="subtitle">Cuidando da sua mente, promovendo o seu bem-estar.</h3>
                     <p class="description">Nosso site é dedicado a fornecer recursos, informações e apoio para promover a saúde mental e o bem-estar. Aqui, você encontrará uma variedade de artigos, dicas e ferramentas para ajudá-lo a cuidar da sua saúde mental, lidar com o estresse, ansiedade e outros desafios emocionais. Estamos comprometidos em criar um espaço acolhedor e informativo para que você possa encontrar o suporte necessário para viver uma vida mais saudável e equilibrada.</p>
+
                     <div class="buttons">
                         <a href="#" class="button order-now">Order now</a>
                         <a href="#" class="button contact-us">Contact us</a>
@@ -52,7 +58,9 @@
                 </div>
             </div>
         </section>
+        
     </main>
+    <script src="./assets/js/script.js"></script> 
 </body>
 
 </html>
