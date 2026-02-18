@@ -1,3 +1,4 @@
+const navLinks= document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton= document.querySelector("#menu-open-button");
 const menuCloseButton= document.querySelector("#menu-close-button");
 
@@ -6,5 +7,9 @@ menuOpenButton.addEventListener("click", ()=> {
 });
 //fechar menu quando o bottao do fechar é clicavel
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+navLinks.forEach(Link => {
+    Link.addEventListener("click", () => menuOpenButton.click());
+    });
 
 

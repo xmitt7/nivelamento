@@ -6,14 +6,20 @@
 }
 
 :root {
-    --primary-color: #00796b; /* Teal darkened for better contrast */
-    --secondary-color: #ab47bc; /* Purple with a richer tone */
-    --background-color: #42a5f5; /* Slightly darker blue for better readability */
-    --tertiary-color: #512da8; /* Deep purple for additional accents */
-    --neutral-color: #ccc; /* Light gray for neutral elements */
-    --dark-color: #1c1c1c; /* Darker shade for improved contrast */
+    --primary-color: #00796b;
+    /* Teal darkened for better contrast */
+    --secondary-color: #ab47bc;
+    /* Purple with a richer tone */
+    --background-color: #42a5f5;
+    /* Slightly darker blue for better readability */
+    --tertiary-color: #512da8;
+    /* Deep purple for additional accents */
+    --neutral-color: #ccc;
+    /* Light gray for neutral elements */
+    --dark-color: #1c1c1c;
+    /* Darker shade for improved contrast */
     /* font size */
-        --font-size-s: 0.9rem;
+    --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;
     --font-size-l: 1.5rem;
@@ -29,10 +35,14 @@
     /*border radius */
     --border-radius-s: 8px;
     --border-radius-m: 12px;
-    --border-raidius-circle: 50%;
+    --border-radius-circle: 50%;
 
     /* site max width */
     --site-max-width: 1300px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* padrao de styles no codigo */
@@ -60,8 +70,29 @@ img {
     padding: 0 20px;
 }
 
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-color);
+}
+
 /* navbar */
 header {
+    position:fixed;
+    width: 100%;
+    z-index: 5;
     background-color: var(--primary-color);
 }
 
@@ -171,6 +202,107 @@ header .navbar {
     margin-right: 30px;
 }
 
+/* Sobte Nos */
+.about-section{
+    padding: 120px 0;
+    background: var(--primary-color);
+}
+
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details .section-title {
+   padding: 0;
+}
+
+.about-section .about-details{
+    max-width: 50%;
+}
+
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+
+/* fale conosco */
+.contact-section {
+    background-color: var(--primary-color);
+    padding: 50px 0 100px;
+}
+
+.contact-section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.contact-section .contact-info-list .contact-info {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-section .contact-info-list .contact-info i {
+    font-size: var(--font-size-m);
+}
+
+.contact-section .contact-form .form-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    outline: none;
+    margin-bottom: 16px;
+    background: var(--neutral-color);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--neutral-color);
+}
+
+.contact-section .contact-form .form-input::placeholder {
+    max-width: 50%;
+}
+
+.contact-section .contact-form .form-input:focus {
+    border-color: var(--secondary-color);
+}
+
+.contact-section .contact-form textarea.form-input {
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.contact-section .contact-form .submit-button {
+    padding: 12px 26px;
+    margin-top: 10px;
+    color: white;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    background: var(--tertiary-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--tertiary-color);
+    transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover {
+    color: var(--tertiary-color);
+    background: transparent;
+}
+
 @media screen and (max-width: 900px) {
     :root {
         --font-size-m: 1rem;
@@ -178,15 +310,16 @@ header .navbar {
         --font-size-xl: 1.5rem;
         --font-size-xxl: 1.8rem;
     }
+
     body.show-mobile-menu header::before {
         content: "";
         position: fixed;
         left: 0;
-        top:0;
-        height:100%;
-        width:100%;
+        top: 0;
+        height: 100%;
+        width: 100%;
         backdrop-filter: blur(5px);
-        background: rgba(0,0,0,0.2);
+        background: rgba(0, 0, 0, 0.2);
     }
 
     .navbar :where(#menu-close-button, #menu-open-button) {
@@ -218,10 +351,11 @@ header .navbar {
         background: white;
         transition: left 0.2s ease;
     }
-    body.show-mobile-menu .navbar .nav-menu{
-        left:0;
+
+    body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
     }
-    
+
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
         display: block;
@@ -229,7 +363,7 @@ header .navbar {
         font-size: var(--font-size-l)
     }
 
-    .hero-section .section-content{
+    .hero-section .section-content {
         gap: 50px;
         text-align: center;
         padding: 30px 20px 20px;
@@ -237,7 +371,8 @@ header .navbar {
         justify-content: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description){
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details,
+    .contact-section .contact-form {
         max-width: 100%;
     }
 
@@ -245,9 +380,30 @@ header .navbar {
         justify-content: center;
     }
 
-    .hero-section .hero-image-wrapper{
+    .hero-section .hero-image-wrapper {
         max-width: 270px;
         margin-right: 0;
     }
-    
+
+    /* Sobre Nos */
+    .about-section .section-content {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+
+    /* fale conosco */
+    .contact-section .section-content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+
 }

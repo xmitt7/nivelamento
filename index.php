@@ -20,16 +20,13 @@
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#heropage" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Sobre</a>
+                    <a href="#about" class="nav-link">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">fale Conosco</a>
+                    <a href="#contact" class="nav-link">fale Conosco</a>
                 </li>
                 <li class="nav-item">
                     <a href="view/login.php" class="nav-link">login</a>
@@ -41,7 +38,7 @@
     </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="heropage">
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">Bem-vindo ao nosso site de Saúde Mental e Bem-Estar!</h2>
@@ -58,6 +55,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="./assets/img/saude mental/ChatGPT Image 18 de fev. de 2026, 01_39_02.png" alt="About" class="about-image">
+                    
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="text">Somos uma equipe dedicada a promover a saúde mental e o bem-estar. Nosso objetivo é fornecer recursos, informações e apoio para ajudar as pessoas a cuidar de sua saúde mental, lidar com desafios emocionais e viver uma vida mais equilibrada. Acreditamos que a saúde mental é fundamental para o bem-estar geral e estamos comprometidos em criar um espaço acolhedor e informativo para todos que buscam apoio e orientação.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="section-content">
+                <ul class=contact-info-list>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>av. paulo schroeder 1138, Joinville, SC</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@saudemental.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(47) 9999-9999</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Nome" class="form-input" required>
+                    <input type="email" placeholder="Email" class="form-input" required>
+                    <textarea placeholder="Mensagem" class="form-input" required></textarea>
+                    <button type="submit" class="submit-button">Enviar</button>
+            </div>
+        </section>
+
 
     </main>
     <script src="./assets/js/script.js"></script>
