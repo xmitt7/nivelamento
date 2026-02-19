@@ -47,9 +47,19 @@
         <section class="hero-section" id="heropage">
             <div class="section-content">
                 <div class="hero-details">
-                    <h2 class="title">Bem-vindo ao nosso site de Saúde Mental e Bem-Estar!</h2>
-                    <h3 class="subtitle">Cuidando da sua mente, promovendo o seu bem-estar.</h3>
-                    <p class="description">Nosso site é dedicado a fornecer recursos, informações e apoio para promover a saúde mental e o bem-estar. Aqui, você encontrará uma variedade de artigos, dicas e ferramentas para ajudá-lo a cuidar da sua saúde mental, lidar com o estresse, ansiedade e outros desafios emocionais. Estamos comprometidos em criar um espaço acolhedor e informativo para que você possa encontrar o suporte necessário para viver uma vida mais saudável e equilibrada.</p>
+                    <h2 class="title">Sua saúde mental importa.</h2>
+
+                    <h3 class="subtitle">
+                        Um espaço seguro para entender, cuidar e fortalecer sua mente.
+                    </h3>
+
+                    <p class="description">
+                        Criamos este site para oferecer informações confiáveis, orientação prática e apoio emocional
+                        sobre temas como ansiedade, depressão, estresse e bem-estar psicológico.
+                        Aqui você encontra conteúdos claros, acolhedores e baseados em conhecimento,
+                        pensados para ajudar você a enfrentar desafios emocionais com mais consciência,
+                        equilíbrio e segurança.
+                    </p>
 
                     <div class="buttons">
                         <a href="#contact" class="button contact-us">Fale Conosco</a>
@@ -69,12 +79,20 @@
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">Sobre Nós</h2>
-                    <p class="text">Somos uma equipe dedicada a promover a saúde mental e o bem-estar. Nosso objetivo é fornecer recursos, informações e apoio para ajudar as pessoas a cuidar de sua saúde mental, lidar com desafios emocionais e viver uma vida mais equilibrada. Acreditamos que a saúde mental é fundamental para o bem-estar geral e estamos comprometidos em criar um espaço acolhedor e informativo para todos que buscam apoio e orientação.</p>
+                    <p class="text">
+                        Somos uma iniciativa dedicada à promoção da saúde mental e do bem-estar emocional.
+                        Nosso propósito é tornar a informação acessível, clara e acolhedora, ajudando
+                        pessoas a compreenderem melhor suas emoções, enfrentarem desafios psicológicos
+                        e desenvolverem uma relação mais saudável consigo mesmas.
+                        Acreditamos que cuidar da mente é essencial para uma vida equilibrada,
+                        e estamos comprometidos em oferecer um espaço seguro, informativo e respeitoso para todos.
+                    </p>
+
                 </div>
             </div>
         </section>
 
-        <section class="about-section" id="depressao">
+        <section class="about-section depressao" id="depressao">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="./assets/img/saude mental/depressao.png" alt="Depressão" class="about-image">
@@ -92,7 +110,7 @@
             </div>
         </section>
 
-        <section class="about-section" id="ansiedade">
+        <section class="about-section ansiedade" id="ansiedade">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="./assets/img/saude mental/ansiedade.png" alt="Ansiedade" class="about-image">
